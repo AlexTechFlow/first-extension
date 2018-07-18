@@ -1,0 +1,28 @@
+{
+    "name": "My Chrome Extension - Image Replacer",
+    "version": "1.0",
+    "author": "Alex B",
+    "homepage_url": "http://portfolio.alexbelinsky.com/",
+    "description": "This extension replaces images on webpages.",
+    "manifest_version": 2,
+    "icons": {                                                  // extension icon - different sizes included //
+	    "16": "images/get_started16.png",
+	    "32": "images/get_started32.png",
+	    "48": "images/get_started48.png",
+	    "128": "images/get_started128.png"
+    },
+	"page_action": {
+		"default_icon": {
+			"16": "images/get_started16.png",
+			"32": "images/get_started32.png",
+			"48": "images/get_started48.png",
+			"128": "images/get_started128.png"
+	    }
+	}, // page action ends 
+	"permissions": ["activeTab", "declarativeContent"],
+	"background": {
+		"scripts": ["script.js"],
+		"persistent": false
+	}	
+
+} // main obj ends
